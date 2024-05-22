@@ -3,6 +3,7 @@
 ## Description
 ContentKeeper is a web application designed for efficient storage and management of various types of content. Whether it's text notes, images, documents, or any other form of digital content, ContentKeeper provides users with a unified platform to create, organize, and access their content seamlessly.
 
+
 ## Key Features
 - **Versatile Content Storage**: Users can store a wide range of content types, including text, images, and documents, in their ContentKeeper account.
 - **Intuitive Organization**: Content can be organized into folders and categories, making it easy for users to maintain a structured and organized content library.
@@ -19,6 +20,11 @@ ContentKeeper leverages the following technologies:
 
 ## Security
 ContentKeeper prioritizes data security and privacy, employing encryption, access controls, and secure communication protocols to safeguard users' content against unauthorized access and breaches.
+
+![architecture](https://raw.githubusercontent.com/Nexoc/ContentKeeper/main/architecture.png)
+
+![architecture database](https://github.com/Nexoc/ContentKeeper/blob/main/architecture_database.JPG?raw=true)
+
 
 ## Conclusion
 ContentKeeper offers a comprehensive solution for individuals and teams to store, organize, and collaborate on various types of content effectively. With its user-friendly interface, powerful features, and robust security measures, ContentKeeper empowers users to manage their content seamlessly and securely.
