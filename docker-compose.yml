@@ -1,0 +1,18 @@
+
+services:
+  postgres:
+    image: postgres:14-alpine
+    container_name: postgres_users
+    ports:
+      - 5432:5432
+    volumes:
+      - ~/apps/postgres:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      - POSTGRES_PASSWORD=0880
+      - POSTGRES_USER=nexoc
+      - POSTGRES_DB=users
+
+volumes:
+  postgres_data:
+
