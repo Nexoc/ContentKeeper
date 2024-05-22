@@ -1,10 +1,10 @@
-package at.davl.movie;
+package at.davl.auth;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MovieApiApplicationTests {
+class AuthApplicationTests {
 
 	@Test
 	void contextLoads() {
