@@ -1,6 +1,11 @@
 spring:
+  docker:
+    compose:
+      enabled: true
+      file: docker-compose.yml
+
   datasource:
-    url: jdbc:postgresql://localhost:5432/users
+    url: jdbc:postgresql://localhost:5433/users
     username: nexoc
     password: 0880
     driver-class-name: org.postgresql.Driver
@@ -29,4 +34,7 @@ spring:
 
 base:
   url: "http://localhost:8080"
+
+
+
 
