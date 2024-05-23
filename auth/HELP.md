@@ -86,6 +86,7 @@ https://phoenixnap.com/kb/install-maven-debian
 # create jar
 mvn clean package
 
+
 # java 21
 https://jdk.java.net/archive/
 cd
