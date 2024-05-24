@@ -81,18 +81,46 @@ docker rmi test:latest
 docker container rm -f $(docker container ls -aq)
 docker image prune -a
 
-# mvn set up PATH variable for Maven
+### mvn set up PATH variable for Maven
 https://phoenixnap.com/kb/install-maven-debian
 # create jar
 mvn clean package
+# start jar
+java -jar name.jar
 
-
-# java 21
+### install set defalut java 21 - 22
 https://jdk.java.net/archive/
 cd
-download -> unpack extract -> move to the sudo mv jdk-21.0.2/ /usr/local/jdk-21
+download -> unpack extract
+move to the:
+sudo mv jdk-21.0.2/ /usr/lib/jvm/java-21
+sudo mv jdk-22.0.1/ /usr/lib/jvm/java-22
+sudo mv jdk-21.0.3+9/ /usr/lib/jvm/java-21m
+# alternative java:
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-22/bin/java 1
+sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/java-22/jdk-22/bin/javac 1
+'
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-21m/bin/java 2
+sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/java-21m/bin/javac 2
 
+# setup default java:
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
 
+/usr/lib/jvm/java-17-openjdk-amd64/bin/javac
+
+## https://learn.microsoft.com/de-de/java/openjdk/install
+sudo apt update
+sudo apt install wget lsb-release -y
+wget https://packages.microsoft.com/config/debian/$(lsb_release -rs)/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+
+sudo apt update
+sudo apt install msopenjdk-21
+
+sudo update-java-alternatives --set msopenjdk-21-amd64
+
+'''
 sudo tee -a  /etc/profile.d/jdk21.sh<<EOF
 export JAVA_HOME=/usr/local/jdk-21
 export PATH=\$PATH:\$JAVA_HOME/bin

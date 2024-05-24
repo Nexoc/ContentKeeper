@@ -86,7 +86,7 @@
 		</dependency>
 
 		<!-- https://www.baeldung.com/docker-compose-support-spring-boot -->
-		<!-- To check that our application is up and running-->
+		<!-- To check that our application is up and running
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -96,7 +96,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-docker-compose</artifactId>
 			<version>3.1.1</version>
-		</dependency>
+		</dependency> -->
 
 	</dependencies>
 
