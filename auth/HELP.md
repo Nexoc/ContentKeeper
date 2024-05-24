@@ -88,7 +88,7 @@ mvn clean package
 # start jar
 java -jar name.jar
 
-### install set defalut java 21 - 22
+### install set default java 21 - 22
 https://jdk.java.net/archive/
 cd
 download -> unpack extract
